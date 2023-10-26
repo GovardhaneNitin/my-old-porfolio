@@ -1,0 +1,159 @@
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  padding: 2rem;
+  margin: 4rem;
+  border-radius: 1rem;
+  background: #0d012c;
+}
+
+.cta-content {
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+  color: #fff;
+}
+
+.cta-content p {
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.cta-content h3 {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.cta-content h2 {
+  font-family: var(--font-family);
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 800;
+}
+
+.cta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-btn button {
+  background: #4caf50;
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 40px;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+.cta-btn button:hover {
+  background: green;
+}
+
+.form-input-one {
+  background: #fff;
+  border: none;
+  border-radius: 50px;
+  box-shadow: none;
+  color: #10161b;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  height: 60px;
+  outline: none;
+  padding: 12px 30px;
+  width: 350px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+  .form-input-one {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .cta-btn {
+    flex-direction: column;
+  }
+
+  .cta-content h3 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .cta-content h2 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .cta-content p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .cta-btn {
+    flex-direction: column;
+  }
+
+  .cta-content h3 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .cta-content h2 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .cta-content p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .form-input-one {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .cta {
+    flex-direction: column;
+    margin: 4rem 2rem;
+  }
+
+  .cta-content {
+    text-align: center;
+  }
+
+  .cta-content h2 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .cta-content p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .cta-content h3 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}

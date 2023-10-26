@@ -1,0 +1,80 @@
+.typewriter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.typewriter h1 {
+  font-family: "Young Serif";
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.typewriter h1 span {
+  color: #bd53ed;
+  position: relative;
+}
+
+.typewriter h1 span::before {
+  content: "";
+  height: 30px;
+  width: 2px;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  background: #bd53ed;
+  transform: translateY(-45%);
+  animation: blink 0.7s infinite;
+}
+
+.typewriter h1 span.stop-blinking::before {
+  animation: none;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .typewriter h1 {
+    font-size: 2rem;
+  }
+
+  .typewriter h1 span::before {
+    height: 20px;
+  }
+
+  .typewriter h1 span.stop-blinking::before {
+    animation: none;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .typewriter h1 {
+    font-size: 1.5rem;
+  }
+
+  .typewriter h1 span::before {
+    height: 15px;
+  }
+
+  .typewriter h1 span.stop-blinking::before {
+    animation: none;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}

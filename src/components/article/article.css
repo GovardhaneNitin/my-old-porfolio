@@ -1,0 +1,79 @@
+.projects-container_article {
+  width: 100%;
+  max-width: 350px; /* Set your desired maximum width */
+  height: 100%;
+  border-radius: 15px !important;
+  display: flex;
+  flex-direction: column;
+  background: #0d012c;
+  margin: 0 auto; /* Center the container */
+}
+
+.projects-container_article-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.projects-container_article-image img {
+  border-radius: 20px !important;
+  display: inline-block !important;
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.projects-container_article-image:hover img {
+  transform: scale(1.1);
+}
+
+.projects-container_article-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 1rem 1.5rem;
+}
+
+.projects-container_article-content p {
+  font-family: var(--font-family);
+  color: #cacaca;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+div .tech {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.projects-container_article-content h3 {
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 28px;
+  color: #4caf50;
+  margin-bottom: 0.5rem; /* Reduce the margin */
+}
+
+.projects-container_article-content a {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media screen and (max-width: 550px) {
+  .projects-container_article-content h3 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 1rem; /* Further reduce the margin */
+  }
+
+  .projects-container_article {
+    max-width: 100%; /* Full width for small screens */
+    margin: 0; /* Remove the margin */
+  }
+}

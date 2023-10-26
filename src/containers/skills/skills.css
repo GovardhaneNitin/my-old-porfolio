@@ -1,0 +1,128 @@
+.mylang {
+  align-items: center;
+  background: #0d012c;
+  border: 1px solid rgba(146, 146, 165, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  margin-right: 0;
+  transition: transform 0.5s;
+}
+
+.mylang:hover {
+  transform: scale(1.1);
+}
+
+.skills-heading h1 {
+  font-size: 60px;
+}
+
+.skills-heading p {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.lang-info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.mylang h3 {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.lang-info p {
+  border: 1px solid #252b58;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.lang-img {
+  background: #17203d;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 3.7rem;
+  height: 70px;
+  justify-content: center;
+  margin-top: 5px;
+  width: 70px;
+}
+
+.lang-img {
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.lang-info img {
+  width: 48px;
+  height: 48px;
+}
+
+.mylang .intermediate {
+  color: #c774b9 !important;
+}
+
+.mylang .junior {
+  color: #eb997c !important;
+}
+
+.mylang .beginner {
+  color: #e6cc79 !important;
+}
+
+.skills {
+  text-align: center;
+}
+
+.carousel-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-list li {
+  display: inline-block;
+  width: 150px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-heading h1 {
+    font-size: 40px;
+  }
+  .skills-heading p {
+    font-size: 16px;
+  }
+  .lang-info p {
+    font-size: 14px;
+  }
+  .lang-img {
+    font-size: 2.7rem;
+    height: 50px;
+    width: 50px;
+  }
+  .lang-info img {
+    width: 38px;
+    height: 38px;
+  }
+  .carousel-list li {
+    width: 120px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}
