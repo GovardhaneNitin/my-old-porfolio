@@ -1,6 +1,12 @@
 .typewriter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding: 2rem 1rem;
 }
@@ -25,12 +31,22 @@
   top: 50%;
   right: -8px;
   background: #bd53ed;
+  -webkit-transform: translateY(-45%);
+  -ms-transform: translateY(-45%);
   transform: translateY(-45%);
+  -webkit-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
 }
 
 .typewriter h1 span.stop-blinking::before {
+  -webkit-animation: none;
   animation: none;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 @keyframes blink {
@@ -49,7 +65,14 @@
   }
 
   .typewriter h1 span.stop-blinking::before {
+    -webkit-animation: none;
     animation: none;
+  }
+
+  @-webkit-keyframes blink {
+    50% {
+      opacity: 0;
+    }
   }
 
   @keyframes blink {
@@ -69,7 +92,14 @@
   }
 
   .typewriter h1 span.stop-blinking::before {
+    -webkit-animation: none;
     animation: none;
+  }
+
+  @-webkit-keyframes blink {
+    50% {
+      opacity: 0;
+    }
   }
 
   @keyframes blink {
